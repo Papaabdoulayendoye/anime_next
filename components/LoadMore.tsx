@@ -15,7 +15,7 @@ const LoadMore = () => {
         setData([...data,...res])
         page++;
       })
-    },[inView,data])
+    },[inView])
     return <>
       <section className='grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4'>
 				{data}

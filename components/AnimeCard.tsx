@@ -16,9 +16,9 @@ return (
 <motion.div 
 variants={container}
 transition={{
-    delay : index * 0.25,
+    delay : index * 0.375,
     ease :'easeInOut',
-    duration : 0.5
+    duration : 0.75
 }}
 viewport={ { amount : 0 } }
 initial="hidden"
@@ -53,7 +53,7 @@ className="max-w-[185px] relative">
             className="object-contain cursor-pointer"
         />
         <p className="text-base text-white font-bold">
-            {anim.episodes || anim.episodes_aired}
+            {anim.episodes || anim.episodes_aired} episodes
         </p>
         </div>
         <div className="flex flex-row gap-2 items-center !justify-start">

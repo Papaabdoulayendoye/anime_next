@@ -14,7 +14,7 @@ export interface AnimProp {
 }
 
 export default async function Home() {
-	const response = await fetchAnime();
+	const response = await fetchAnime(10);
 	return (
 		<main className="sm:p-16 py-16 px-8 flex flex-col gap-10">
 			<h2 className=" text-base-regular font-semibold text-2xl">Explore Anime</h2>
