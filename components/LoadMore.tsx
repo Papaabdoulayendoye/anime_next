@@ -12,8 +12,10 @@ const LoadMore = () => {
     const [data, setData] = useState<AnimeCard[]>([])
     useEffect(() => {
       if(inView) fetchAnime(page).then((res) => {
-        setData([...data,...res])
-        page++;
+        setTimeout(() => {
+          setData([...data,...res])
+          page++;
+        },1000)
       })
     },[inView])
     return <>
